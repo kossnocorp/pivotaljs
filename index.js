@@ -39,7 +39,7 @@ Pivotal.prototype.updateStory = function updateStory(projectId, storyId, params,
  * @param  {Function} [callback]  function(error, response)
  */
 Pivotal.prototype.getStory = function getStory(projectId, storyId, callback) {
-	this.api('get', '/projects/' '/stories/' + storyId, {}, callback);
+	this.api('get', '/projects/' + projectId + '/stories/' + storyId, {}, callback);
 };
 
 /**
